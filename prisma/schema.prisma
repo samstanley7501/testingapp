@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String  @id @default(cuid())
+  name        String
+  email       String  @unique
+  // "Product" | "Sales" (SQLite has no enums; validated in lib/constants.ts)
+  team        String
+  // Hex colour used to identify the user in the calendar overlay
+  color       String
+  ownedEvents Event[] @relation("EventOwner")
+  attending   Event[] @relation("EventAttendees")
+}
+
+model Event {
+  id        String   @id @default(cuid())
+  title     String
+  start     DateTime
+  end       DateTime
+  // "Product Meeting" | "Sales Meeting" | "Internal" | "Focus Time" | "Other"
+  category  String
+  ownerId   String
+  owner     User     @relation("EventOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  attendees User[]   @relation("EventAttendees")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([start])
+  @@index([ownerId])
+}

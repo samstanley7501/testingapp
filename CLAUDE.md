@@ -8,3 +8,7 @@ Key rules from it:
 - Don't invent features, prices, countries or partnerships beyond what the briefing lists.
 - Match the voice: casual Aussie barber-to-barber, short, low-pressure.
 - Don't ask barbers for passwords or bank details by DM.
+
+## Instagram outreach
+
+For prospecting and DMing barbers, follow `docs/outreach-playbook.md` exactly (qualification rules, pitch variants, 15/day limit, stop conditions) and log every send in `outreach/tracker.csv`.

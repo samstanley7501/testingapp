@@ -35,7 +35,7 @@ Record which source each prospect came from.
 Fill `[SOFTWARE]` with what they visibly use ("DMs" if no link). Every variant mentions @gettrybe. Lightly personalise: first name if it's obvious, a real detail from their work (a fade, a style, their city). Never invent details.
 
 **A: Core (control)**
-> Hey bro, Sam here from @gettrybe! Just had a look at your profile, we're a booking and payments platform fully tailored to private barbers like yourself. We've had a bunch of barbers jump over recently who used to take bookings through [SOFTWARE] and they're loving it. Would be keen to help you get set up!
+> Hey bro, I'm from @gettrybe! Just had a look at your profile, we're a booking and payments platform fully tailored to private barbers like yourself. We've had a bunch of barbers jump over recently who used to take bookings through [SOFTWARE] and they're loving it. Would be keen to help you get set up!
 
 **B: Question-led**
 > Hey bro, love your work! I'm from @gettrybe, a booking app built for independent barbers. Keen to hear how you're finding [SOFTWARE]? Always curious what barbers like and don't like about it 🙌
